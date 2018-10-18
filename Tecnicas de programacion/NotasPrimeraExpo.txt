@@ -1,0 +1,43 @@
+ELEMENTOS
+-> COUPIER
+	JUGADORES = 1-6
+	CARTAS
+		A=1-11
+		K,Q,J=10
+	TIPO=13 DE CADA TIPO
+		* Corazon
+		* Picas
+		* Diamantes
+		* Trebol
+->FLUJO:
+	¿Cuantos jugadores?
+		Jugadores= {Nombre};
+	Barajear Cartas
+	Repartir
+	Recorrer jugadores
+		-Validar si ganó
+		-Quiere más? Repartes
+SI GANÓ: Imprime: Resultados
+
+
+
+PONLE 52 A CARTA BARAJA
+
+
+Cuidado con la recursion
+un estado se guarda 
+
+[RECURSIVIDAD]
+
+CHECAR LOS NOMBRES DE LOS MÉTODOS
+
+CARACTERISTICAS O.O.
+HERENCIA
+THIS O SET
+DESPACHO DINAMICO DE LOS OBJETOS
+
+
+
+caracteristicas de un objeto, de una clase
+
+

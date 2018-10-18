@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{venndiagram}
+\newcommand\hr{\par\vspace{-.5\ht\strutbox}\noindent\hrulefill\par}
+\begin{document}
+
+\section*{Conjuntos Ejercicios (Resoluci\'on)}
+\hr
+    \begin{enumerate}
+        \item Defina un conjunto.\newline
+        \textbf{Es una colecci\'on  de objetos, elementos o miembros, este concepto es b\'asico en toda las matem\'aticas y sus aplicaciones.}
+        \item ¿Cu\'al es la notaci\'on de conjuntos?\newline
+        \textbf{La notaci\'on de los conjuntos depende de la cantidad de elementos que lo componen, el nombre de un conjunto es representado usualmente en la notaci\'on por una letra en may\'uscula.
+        Cuando un conjunto es finito y no muy grande, su notaci\'on es como la siguiente: }
+        \textit{A = \{1, 2, 3, 4\}}.
+        \item Si X es un conjunto finito, ¿Qu\'e es $\mid X \mid$?
+        \newline
+        \textbf{$\mid X \mid$ representa la cardinalidad del conjunto X, \textit{la cardinalidad} se conoce como la cantidad de elementos que conforman a un conjunto}
+        \item ¿C\'omo se denota x es un elemento del conjunto X?
+        \newline
+        \textbf{$x \in X$}
+        \item ¿C\'omo se denota x NO es un elemento del conjunto X?
+        \newline
+        \textbf{$x \notin X$}
+        \item
+        ¿C\'omo se denota el conjunto vac\'io?
+        \newline
+       \textbf{$\emptyset$}
+       \item
+       Defina X = Y, donde X y Y son conjuntos.
+       \newline
+       \textbf{$X \equiv Y$}
+       \item
+       Defina X $\subseteq$ Y, donde X y Y son conjuntos.
+       \newline
+       \textbf{$X \equiv Y$}
+       \newline
+       \item
+       Defina X es un subconjunto propio de Y.
+       \newline
+       \textbf{X $\subset$ Y}
+       \item
+       ¿Cu\'al es el conjunto potencia de X?¿C\'omo se denota?
+      \newline
+      \textbf{El conjunto de todos los subconjuntos (propios o no) de X}. 
+      \newline
+      \textbf{Se denota como $P(X)$}.
+      %Pregunta 11
+      \item
+      Si X tiene $n$ elementos ¿Cu\'antos elementos tiene el conjunto potencia de X?
+      \newline
+      \textbf{El conjunto potencia de X es $2^n$}
+      %Pregunta 12
+      \item
+      Defina X uni\'on Y.¿C\'omo se denota la uni\'on?
+      \newline
+      \textbf{La uni\'on de X y Y consiste en todos los elementos que pertenecen a X o a Y (o a ambos).}
+       %Pregunta 13
+      \item
+      Si S es una familia de conjuntos, ¿C\'omo se define la uni\'on de S?¿C\'omo se denota la uni\'on?
+      \newline
+      \textbf{La colecci\'on que tiene por elementos a los elementos que pertenecen a algu\'un conjunto que a su vez sea elemento del conjunto S.}
+      \newline
+      \textbf{Se denota como $\cup$S.}
+      %Pregunta 14
+      \item
+      Defina X intersecci\'on Y. ¿C\'omo se denota la intersecci\'on de X y Y?
+      %Pregunta 15
+      \item
+      Si S es una familia de conjuntos, ¿c\'omo se define la intersecci\'on de S?
+      ¿C\'omo se denota la intersecci\'on?
+      
+      %Pregunta 16
+      \item
+      Defina X y Y son conjuntos disjuntos.
+      %Pregunta 17
+      \item
+      ¿Qu\'e es una familia de conjuntos disjuntos por pares?
+      %Pregunta 18
+      \item
+      Defina la diferencia de conjuntos X y Y. ¿C\'omo se denota la diferencia?
+      %Pregunta 19
+      \item
+      ¿Qu\'e es un conjunto universal?
+      %Pregunta 20
+      \item
+      ¿Qu\'e es el complemento del conjunto X?¿C\'omo se denota?
+      %Pregunta 21
+      \item
+      ¿Qu\'e es un diagrama de Venn?
+      %Pregunta 22
+      \item
+      Dibuje un diagrama de Venn de tres conjuntos e identifique el conjunto representado por cada regi\'on.
+      \newline
+      \begin{venndiagram3sets}
+          %[labelA=\(T\),labelOnlyA=1,labelOnlyB=4,labelABC=1,labelNotABC=5,sh]
+          [shade=lightgray]
+          \fillA
+          \fillB
+          \fillC
+      \end{venndiagram3sets}
+      \item
+      Enuncie las leyes asociativas para conjuntos.
+      \item
+      Enuncie las leyes conmutativas para conjuntos.
+      \item
+      Enuncie las leyes distributivas para conjuntos.
+      \item
+      Enuncie las leyes de identidad para conjuntos. 
+      \item
+      Enuncie las leyes de complementos para conjuntos.
+      \item
+      Enuncie las leyes de idempotencia para conjuntos.
+      \item
+      Enuncie las leyes de acotaci\'on para conjuntos.
+      \item
+      Enuncie las leyes de absorci\'on para conjuntos.
+      \item
+      Enuncie las leyes
+      de involvuci\'on para conjuntos.
+      \item
+      Enuncie las leyes 0/1 para conjuntos.
+      \item
+      Enuncie las leyes de Morgan para conjuntos.
+      \item
+      ¿Qu\'e es una partici\'on del conjunto X?
+      \item
+      Defina el \textit{producto cartesiano} de los conjuntos X y Y.¿C\'omo se denota este producto cartesia no?
+      \item
+      Defina el \textit{producto cartesiano} de los conjuntos $X_{1},X_{2}...,X_{n}.$
+      \newline
+      ¿C\'omo se denota el producto cartesiano?
+    \end{enumerate}
+\end{document}

@@ -1,0 +1,33 @@
+10:19 29/08/2018
+
+LECTURA 2 Y 3 ESTUDIAR
+
+Lectura #3 Administracion de incertidumbre en los sistemas expertos basados en reglas
+Que es incertidumbre?
+La informacion que puede ser incompleta inconsistente, o información
+que no es suficiente para resolver un problema
+La incertidumbre se puede manejar con 
+	Leyes Bayesianos [El conocimiento perfecto] P.ejemplo : A is true A is not FALSE
+	Lógica difusa
+	u otras cosas como redes neuronales
+
+Hay corelaciones entre las condiciones y acciones
+Imprecise language es otro factor que da incertidumbre
+
+
+teoria de la Probabilidad basica
+
+
+Conditional probability
+Mutuamente exclusivo:- No hay dependencia
+
+Pag 74 del libro
+
+
+P DADO QUE ocurrió A P|A
+
+Bayes theorem
+
+Razonamiento bayesiano estudiarlo.
+
+CLASE HASTA LA PROXIMA SEMANA

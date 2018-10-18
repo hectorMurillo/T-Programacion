@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Amigo implements Iterable<Amigo>{
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private List<Amigo> amigos = new ArrayList<Amigo>();
+
+    public Amigo(String nombre,String apellido,int edad, Amigo... amigos){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        for (Amigo amigo : amigos)
+            this.amigos.add(amigo);
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    @Override
+    public Iterator<Amigo> iterator() {
+        return amigos.iterator();
+    }
+
+    public String toString() {
+        return "[Amigo: \n" +
+                "nombre: " + this.nombre + " " +
+                "apellido: " + this.apellido + " " +
+                "edad: " + this.edad + "]";
+    }
+}
