@@ -1,0 +1,121 @@
+{
+  "ejercicios": [
+    {
+      "id_ejercicio": 1,
+      "nivel": "PRINCIPIANTE",
+      "descripcion_problema": "Elaborar 1 programa en JAVA que imprima HOLA MUNDO",
+      "solucion_esperada":"hola mundo",
+      "ejecucion_correcta": false,
+      "ayuda":
+        {
+          "encabezado":"Aprendiendo la clase System",
+          "cuerpo":"Para aplicaciones Java simples e independientes, una forma típica de escribir una línea de datos de salida es: \n \t\t System.out.println(data);",
+          "url":"https://docs.oracle.com/javase/7/docs/api/java/lang/System.html"
+        }
+    },
+    {
+      "id_ejercicio": 2,
+      "nivel": "PRINCIPIANTE",
+      "descripcion_problema": "Elabora 1 programa en JAVA que declare 1 variable de con el valor \n \"hola\" y la imprima",
+      "solucion_esperada":"hola",
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Declarando variables",
+        "cuerpo":"Las variables son una de las características fundamentales de los lenguajes de programación, permiten acceder a la memoria \n para almacenar y recuperar los datos con los que nuestros programas van a trabajar. \nSon por tanto el mecanismo que los lenguajes de programación ponen a nuestra disposición para acceder a la memoria. \n En java una variable de tipo Integer se declara así: \n\t int variable = 0;",
+        "url":"https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html"
+      }
+    },
+    {
+      "id_ejercicio": 3,
+      "nivel": "PRINCIPIANTE",
+      "descripcion_problema": "Elabora 1 programa en JAVA que sume dos variables \n que den como resultado 15",
+      "solucion_esperada":15,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 1,
+      "nivel": "INTERMEDIO",
+      "descripcion_problema": "Elabore un programa donde declare una variable \npara su fecha de nacimiento con valor 1993\n y en base a ella determine la edad de una persona \n la salida deberá decir \"25 años\"",
+      "solucion_esperada":"25 años",
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"Algunas veces necesitamos de operaciones básicas \n como las resta para determinar datos importantes \n en este caso recuerda que la edad al finalizar el año es \n fecha de nacimiento - año actual",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 2,
+      "nivel": "INTERMEDIO",
+      "descripcion_problema": "Elabora 1 programa en JAVA que saque el residuo de 10/2",
+      "solucion_esperada":0,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 3,
+      "nivel": "INTERMEDIO",
+      "descripcion_problema": "Elabora 1 programa en JAVA que saque el residuo de 10/2",
+      "solucion_esperada":0,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 1,
+      "nivel": "AVANZADO",
+      "descripcion_problema": "Elabora 1 programa en JAVA que saque el residuo de 10/2",
+      "solucion_esperada":0,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 2,
+      "nivel": "AVANZADO",
+      "descripcion_problema": "Elabora 1 programa en JAVA que saque el residuo de 10/2",
+      "solucion_esperada":0,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    },
+    {
+      "id_ejercicio": 3,
+      "nivel": "AVANZADO",
+      "descripcion_problema": "Elabora 1 programa en JAVA que saque el residuo de 10/2",
+      "solucion_esperada":0,
+      "ejecucion_correcta": false,
+      "ayuda":
+      {
+        "encabezado":"Aprendiendo a sacar el residuo.",
+        "cuerpo":"La mayoría de los ejercicios en JAVA necesitan de operaciones aritmeticos / lógicos, \nuna de las maneras de sacar el residuo dentro de java es usando el operador \"%\" como se muestra \n 6%3 = 0",
+        "url":"http://www.cafeaulait.org/course/week2/15.html"
+      }
+    }
+  ]
+}

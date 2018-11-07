@@ -1,0 +1,10 @@
+Microsoft Windows [Versi¢n 10.0.17134.345]
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor>cd C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor\src\Archivos
+
+C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor\src\Archivos>javac Ejercicio.java
+
+C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor\src\Archivos>java Ejercicio
+
+C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor\src\Archivos>¨M s? 

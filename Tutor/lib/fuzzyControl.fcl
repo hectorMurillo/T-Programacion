@@ -1,0 +1,90 @@
+FUNCTION_BLOCK fuzzyControl	// Block definition (there may be more than one block per file)
+
+VAR_INPUT				// Define input variables
+    nivelActual:REAL;
+	tiempo : REAL;
+	errores : REAL;
+    compilaciones : REAL;
+    ejecuciones : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	nivel : REAL;
+END_VAR
+
+FUZZIFY nivelActual
+    TERM principiante := (0, 0) (1, 1) (2,0) ;
+    TERM intermedio := (2, 0) (3,1) (4,0);
+    TERM avanzado := (4, 0) (5,1) (6,0);
+END_FUZZIFY
+
+FUZZIFY tiempo			// Fuzzify input variable 'tiempo': {'lento', 'regular' , 'rapido'}
+	TERM rapido := (0, 1) (1, 1) (2,0) ;
+	TERM normal := (1, 0) (3,1) (5,0) ;
+	TERM lento := (4, 0) (7, 1) (10,1);
+END_FUZZIFY
+
+FUZZIFY compilaciones
+    TERM poco := (0, 1) (1, 1) (4,0) ;
+    TERM mucho := (2, 0) (6, 1) (8,0) ;
+END_FUZZIFY
+
+FUZZIFY ejecuciones
+    TERM poco  := (0, 1) (1, 1) (3,0) ;
+    TERM mucho := (1,0) (5,1) (8,0);
+END_FUZZIFY
+
+//FUZZIFY errores			// Fuzzify input variable 'errores': { 'pocos', 'normal','muchos' }
+//	TERM pocos := (0, 1) (1, 1) (3,0) ;
+//	TERM normal := (1, 0) (4, 1) (6,1) ; //No me queda muy claro
+//	TERM muchos := (7,0) (9,1);
+//END_FUZZIFY
+
+DEFUZZIFY nivel
+	TERM principiante := (0,1) (1,1) (3,0);
+	TERM intermedio := (1,0) (3,1) (5,0);
+	TERM experto := (4,0) (6,1) (8,0);
+	METHOD : COG;		// Use 'Center Of Gravity' defuzzification method
+	DEFAULT := 0;		// Default value is 0 (if no rule activates defuzzifier)
+END_DEFUZZIFY
+
+RULEBLOCK No1
+RULE 1 : IF nivelActual IS principiante AND tiempo IS rapido AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS intermedio;
+RULE 2 : IF nivelActual IS principiante AND tiempo IS rapido AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS principiante ;
+RULE 3 : IF nivelActual IS principiante AND tiempo IS rapido AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS principiante ;
+RULE 4 : IF nivelActual IS principiante AND tiempo IS rapido AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS principiante ;
+RULE 5 : IF nivelActual IS principiante AND tiempo IS normal AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS intermedio;
+RULE 6 : IF nivelActual IS principiante AND tiempo IS normal AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS principiante ;
+RULE 7 : IF nivelActual IS principiante AND tiempo IS normal AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS principiante ;
+RULE 8 : IF nivelActual IS principiante AND tiempo IS normal AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS principiante ;
+RULE 9 : IF nivelActual IS principiante AND tiempo IS lento AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS principiante ;
+RULE 10 : IF nivelActual IS principiante AND tiempo IS lento AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS principiante;
+RULE 11 : IF nivelActual IS principiante AND tiempo IS lento AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS principiante;
+RULE 12 : IF nivelActual IS principiante AND tiempo IS lento AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS principiante;
+RULE 13 : IF nivelActual IS intermedio AND tiempo IS rapido AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS avanzado;
+RULE 14 : IF nivelActual IS intermedio AND tiempo IS rapido AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS intermedio ;
+RULE 15 : IF nivelActual IS intermedio AND tiempo IS rapido AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS intermedio ;
+RULE 16 : IF nivelActual IS intermedio AND tiempo IS rapido AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS intermedio ;
+RULE 17 : IF nivelActual IS intermedio AND tiempo IS normal AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS avanzado;
+RULE 18 : IF nivelActual IS intermedio AND tiempo IS normal AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS intermedio ;
+RULE 19 : IF nivelActual IS intermedio AND tiempo IS normal AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS intermedio ;
+RULE 20 : IF nivelActual IS intermedio AND tiempo IS normal AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS intermedio ;
+RULE 21 : IF nivelActual IS intermedio AND tiempo IS lento AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS intermedio ;
+RULE 22 : IF nivelActual IS intermedio AND tiempo IS lento AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS principiante;
+RULE 23 : IF nivelActual IS intermedio AND tiempo IS lento AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS principiante;
+RULE 24 : IF nivelActual IS intermedio AND tiempo IS lento AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS principiante;
+RULE 25 : IF nivelActual IS avanzado AND tiempo IS   rapido  AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS avanzado;
+RULE 26 : IF nivelActual IS avanzado AND tiempo IS   rapido  AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS avanzado ;
+RULE 27 : IF nivelActual IS avanzado AND tiempo IS   rapido  AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS avanzado ;
+RULE 28 : IF nivelActual IS avanzado AND tiempo IS   rapido  AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS avanzado ;
+RULE 29 : IF nivelActual IS avanzado AND tiempo IS   normal  AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS avanzado;
+RULE 30 : IF nivelActual IS avanzado AND tiempo IS   normal  AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS avanzado ;
+RULE 31 : IF nivelActual IS avanzado AND tiempo IS   normal  AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS avanzado ;
+RULE 32 : IF nivelActual IS avanzado AND tiempo IS   normal  AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS avanzado ;
+RULE 33 : IF nivelActual IS avanzado AND tiempo IS   lento   AND compilaciones IS poco AND ejecuciones IS poco THEN nivel IS avanzado ;
+RULE 34 : IF nivelActual IS avanzado AND tiempo IS   lento  AND compilaciones IS poco AND ejecuciones IS mucho THEN nivel IS intermedio;
+RULE 35 : IF nivelActual IS avanzado AND tiempo IS   lento  AND compilaciones IS mucho AND ejecuciones IS poco THEN nivel IS intermedio;
+RULE 36 : IF nivelActual IS avanzado AND tiempo IS   lento  AND compilaciones IS mucho AND ejecuciones IS mucho THEN nivel IS intermedio;
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK

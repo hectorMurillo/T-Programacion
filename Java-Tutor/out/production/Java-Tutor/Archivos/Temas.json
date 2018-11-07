@@ -1,0 +1,23 @@
+{
+  "lecciones" :
+  [
+    {
+      "id_leccion" : 1,
+      "id_material" : 1,
+      "tipo_contenido" : "multimedia",
+      "descripcion_contenido": "Tutoriales de JAVA.",
+      "url": "https://www.youtube.com/results?search_query=java+introduccion+hola+mundo"
+    },
+    {
+      "id_leccion" : 1,
+      "id_material" : 2,
+      "tipo_contenido" : "texto",
+      "descripcion_contenido": "Usando la API de java.",
+      "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html"
+    }
+  ],
+  "descripcion_leccion":{
+    "id_leccion":1,
+    "descripcion_leccion":"Principiante en JAVA ¿Cómo hacer mi primer Hola Mundo?"
+  }
+}

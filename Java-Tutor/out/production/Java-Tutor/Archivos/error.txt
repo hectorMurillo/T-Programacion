@@ -1,0 +1,4 @@
+javac: file not found: Ejercicio.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+Error: no se ha encontrado o cargado la clase principal Ejercicio

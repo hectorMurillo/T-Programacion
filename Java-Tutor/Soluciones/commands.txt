@@ -1,0 +1,4 @@
+cd C:\Users\c21he\Desktop\MAESTRIA\Ejercicios TP\Java-Tutor\Soluciones
+javac Ejercicio.java
+java Ejercicio
+cd..
